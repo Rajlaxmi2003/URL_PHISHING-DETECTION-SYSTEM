@@ -24,6 +24,7 @@ setup(
     version='0.0.1',
     author='Datta Teja',
     author_email='dattateja1234@gmail.com',
+    maintainer='Raj Laxmi Kumari',
     packages=find_packages(),
     install_requires=get_requirements()
 )

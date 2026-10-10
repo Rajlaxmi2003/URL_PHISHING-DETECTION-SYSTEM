@@ -1,6 +1,11 @@
-# Phishing URL Detection System
+# SecureSight — Phishing URL Detection
 
 > An end-to-end Machine Learning System that detects Phishing URLs in real time - from raw data ingestion to a deployed browser extension - achieving **98.28% Accuracy, 97.75% Precision, 97.25% Recall** with an XGBoost classifier
+
+## Project Credits
+
+This repository is a customized version of [url-phishing-detection](https://github.com/dattatejaofficial/url-phishing-detection), originally created by Raj Laxmi Kumari. The original model, data, research, and training pipeline remain attributed to the original project.
+
 
 ---
 
@@ -217,6 +222,20 @@ url-phishing-detection/
 
 ## Setup & Installation
  
+### Run locally on Windows (no Azure or MongoDB needed)
+
+The project includes a saved model that can be used on your computer. To start the local API:
+
+1. Install Python 3 if it is not already installed.
+2. In File Explorer, open the project folder.
+3. Double-click `run_local.bat`. The first run creates a small Python environment and installs the packages it needs. This can take a few minutes and requires an internet connection.
+4. Keep the black command window open. When it says the server is running, open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser.
+5. Enter a website address and click **Check website**. Click **Show details** under the result to see the score and explanation on a separate page. The API guide is available at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs); its interactive developer reference is at [http://127.0.0.1:8000/api-reference](http://127.0.0.1:8000/api-reference).
+
+To stop the server, click the command window and press **Ctrl+C**. The local API uses the model in `notebooks/models` and does not need Azure credentials or MongoDB. It only provides URL predictions; cloud feedback storage and model retraining are not enabled in local mode.
+
+### Advanced setup
+
 ```bash
 # Clone the repository
 git clone https://github.com/dattatejaofficial/url-phishing-detection.git
