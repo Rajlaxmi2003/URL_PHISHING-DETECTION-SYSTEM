@@ -7,3 +7,8 @@ mlflow.db
 /logs
 /mlruns
 mlflow-vm_key.pem
+.venv/ venv/
+pycache/ *.py[cod]
+.env .env*
+mlruns/ mlflow.db Artifacts/ logs/
+*.pem
